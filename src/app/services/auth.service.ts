@@ -8,7 +8,7 @@ import { Usuario } from '../models/usuario';
   providedIn: 'root',
 })
 export class AuthService {
-  private apiUrl = 'http://localhost:3000/api'; // URL del backend
+  private apiUrl = 'https://backend-tienda-virtual-production.up.railway.app/api'; // URL del backend
   private usuarioSubject = new BehaviorSubject<Usuario | null>(null);
 
   constructor(private http: HttpClient) {}

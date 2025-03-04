@@ -7,8 +7,8 @@ import { Producto } from '../models/producto';
   providedIn: 'root',
 })
 export class ProductoService {
-  private apiUrl = 'http://localhost:3000/api/productos';
-  private carritoUrl = 'http://localhost:3000/api/carrito'; // Nueva URL para el carrito
+  private apiUrl = 'https://backend-tienda-virtual-production.up.railway.app/api/productos';
+  private carritoUrl = 'https://backend-tienda-virtual-production.up.railway.app/api/carrito'; // Nueva URL para el carrito
 
   constructor(private http: HttpClient) {}
 
